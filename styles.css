@@ -1,5 +1,5 @@
 :root {
-    --branding-color: #6c63ff;  /* Purple color */
+    --branding-color: #6c63ff; 
     --secondary-color: #f9f7fe;
     --heading-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins", sans-serif;
@@ -75,14 +75,13 @@ body {
     padding: 18px 30px;
     text-decoration: none;
     text-transform: capitalize;
-    color: var(--branding-color); /* Purple text color */
-    border: 1px solid var(--branding-color) !important; /* Purple border */
-    transition: all 0.3s ease-in-out; /* Smooth transition */
+    color: var(--branding-color); 
+    border: 1px solid var(--branding-color) !important;
+    transition: all 0.3s ease-in-out; 
 }
 
 .primary-link:hover {
-    background-color: var(--branding-color);
-    color: white;
+    color: black;
     transform: translateY(-3px);
 }
 
@@ -90,4 +89,12 @@ body {
     font-family: var(--heading-font-family);
     font-weight: 700;
     font-size: 64px;
+}
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
