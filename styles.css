@@ -122,6 +122,6 @@ body {
  margin-bottom: 20px;
 }
 }
-.about-container{
+.about-container, .work-container{
     margin-top: 70px;
 }
