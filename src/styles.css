@@ -61,7 +61,7 @@ body {
 }
 
 .btn-branding:hover {
-    background: #283618;
+    background: #414833;
     color: white;
     transform: translateY(-3px);
 }
@@ -135,7 +135,9 @@ body {
 .about-container, .work-container,.contact-container{
     margin-top: 70px;
 }
-
+.content h1{
+    font-family: var(--heading-font-family);
+}
 footer .email-link{
     text-decoration: none;
     color: #000;
