@@ -1,6 +1,7 @@
 :root {
     --branding-color: /* #6c63ff; #432818;*/ #6a040f;
     --secondary-color: /*#f9f7fe; #bb9457;*/ #03071e;
+    --third-color: #ffba08;
     --heading-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins", sans-serif;
 }
@@ -87,9 +88,6 @@ body {
     color: black;
     transform: translateY(-3px);
 }
-.projects{
-    background-color: var(--secondary-color);
-}
 
 #titles {
     font-family: var(--heading-font-family);
@@ -135,7 +133,7 @@ body {
 .about-container, .work-container,.contact-container{
     margin-top: 70px;
 }
-.content h1{
+.content h1, .container h3{
     font-family: var(--heading-font-family);
 }
 footer .email-link{
@@ -168,7 +166,7 @@ footer .contact-box{
     background-color: var(--secondary-color);
     padding:30px 60px;
     border-radius: 10px;
-    color: #ffba08;
+    color: var(--third-color);
 }
 .content a{
     text-decoration: none;
@@ -181,4 +179,83 @@ footer .contact-box{
 .contact-box h4{
     font-size: 48px;
     font-family: var(--heading-font-family);
+}
+/* Art section */
+ul.cards {
+  width: 800px;
+  margin: 0 auto 20px;
+  height: 300px;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+ul.cards li.card {
+  background: #FFF;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0px;
+  box-shadow: 1px 2px 2px 0 #aaa;
+  transition: all 0.4s cubic-bezier(.63, .15, .03, 1.12);
+}
+
+ul.cards li.card img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+ul.cards li.card-1 {
+  z-index: 10;
+  transform: rotateZ(-2deg);
+}
+
+ul.cards li.card-2 {
+  z-index: 9;
+  transform: rotateZ(-7deg);
+  transition-delay: 0.05s; 
+}
+
+ul.cards li.card-3 {
+  z-index: 8;
+  transform: rotateZ(5deg);
+  transition-delay: 0.1s; 
+}
+
+ul.cards li.card-4 {
+  z-index: 7;
+  transform: rotateZ(12deg);
+  transition-delay: 0.15s; }
+
+ul.cards.transition li.card {
+  transform: rotateZ(0deg); 
+}
+
+ul.cards.transition li.card-1 {
+  left: 600px; 
+}
+
+ul.cards.transition li.card-2 {
+  left: 400px; 
+}
+
+ul.cards.transition li.card-3 {
+  left: 200px; 
+}
+
+ul.cards.transition li.card-4 {
+  left: 0px; 
+}
+
+.art{
+    color:white;
+    background-color: var(--secondary-color);
+}
+.art p{
+    font-family: var(--default-font-family);
+    padding:10px;
 }
