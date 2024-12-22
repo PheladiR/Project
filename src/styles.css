@@ -131,6 +131,9 @@ body {
 .hero h2{
   font-size: 18px;
 }
+
+
+
 }
 
 .about-container, .work-container,.contact-container{
@@ -239,11 +242,11 @@ ul.cards.transition li.card {
 }
 
 ul.cards.transition li.card-1 {
-  left: 600px; 
+  left: 400px; 
 }
 
 ul.cards.transition li.card-2 {
-  left: 400px; 
+  left: 600px; 
 }
 
 ul.cards.transition li.card-3 {
