@@ -131,9 +131,6 @@ body {
 .hero h2{
   font-size: 18px;
 }
-
-
-
 }
 
 .about-container, .work-container,.contact-container{
@@ -266,4 +263,28 @@ ul.cards.transition li.card-4 {
     padding:10px;
 }
 
-/*music*/
+/*art*/
+/* Small screen styles */
+@media (max-width: 768px) {
+  ul.cards {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  ul.cards li.card {
+    position: relative;
+    width: 40%;
+    height: auto;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+    transform: rotateZ(0deg);
+  }
+  ul.cards.transition li.card {
+    left: 0;
+    top: 0;
+  }
+    .card {
+    margin: 20px auto;
+  }
+}
